@@ -12,13 +12,13 @@ body {
 
 /* 2. CONTENEDOR EFECTO "CRISTAL" (Glassmorphism) */
 main {
-    max-width: 500px;
-    margin: 50px auto;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(15px); /* El truco del vidrio */
+    max-width: 900px;      /* ANTES: 500px. Esto lo hace horizontal y ancho */
+    margin: 40px auto;     /* Centrado con espacio arriba */
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
-    padding: 40px;
+    padding: 20px 40px;    /* Reducimos el relleno arriba/abajo para que sea más delgado */
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
@@ -34,11 +34,12 @@ h1 {
 /* 3. TARJETAS COMPACTAS Y MODERNAS */
 .galeria {
     display: flex;
-    flex-direction: row; /* Esto los pone en fila horizontal */
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-direction: row;   /* Los pone en fila horizontal */
+    flex-wrap: nowrap;     /* Evita que se amontonen (opcional) */
+    justify-content: center; 
+    gap: 20px;             /* Espacio entre cada cuadro */
     padding: 20px;
+    width: 100%;           /* Ocupa todo el ancho disponible fuera del main */
 }
 
 .proyecto-card {
