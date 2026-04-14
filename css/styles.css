@@ -1,0 +1,40 @@
+/* Reset básico para que todo se vea igual en cualquier navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal del Portafolio */
+.galeria {
+    display: flex;          /* Activa el modo flexible */
+    flex-direction: row;    /* Pone los elementos en fila */
+    flex-wrap: wrap;        /* Si no caben, bajan a la siguiente línea */
+    gap: 20px;              /* Espacio entre cada proyecto */
+    justify-content: center;/* Centra los proyectos */
+    margin-top: 20px;
+}
+
+/* Estilo para cada "tarjeta" de proyecto */
+.proyecto-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;           /* Ancho fijo para que se vean parejos */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.proyecto-card img {
+    width: 100%;            /* La imagen se ajusta al ancho del cuadro */
+    height: 150px;
+    object-fit: cover;      /* Recorta la imagen para que no se deforme */
+    border-radius: 4px;
+}
