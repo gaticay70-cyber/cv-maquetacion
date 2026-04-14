@@ -54,12 +54,12 @@ h1 {
 
 .proyecto-card:hover {
     transform: translateY(-5px);
-    border-color: #eeeb22;
+    border-color: hsl(59, 92%, 55%);
     box-shadow: 0 0 20px rgba(255, 251, 6, 0.2);
 }
 
 .proyecto-card a {
-    background: #22d3ee;
+    background: #f9e212;
     color: #0f172a;
     padding: 5px 10px;
     border-radius: 10px;
