@@ -1,40 +1,78 @@
-/* Reset básico para que todo se vea igual en cualquier navegador */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Configuracion General */
 body {
+    background-color: #ffadb0; /* Tu color salmon actual */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-    background-color: #FFB1B0;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Contenedor principal del Portafolio */
-.galeria {
-    display: flex;          /* Activa el modo flexible */
-    flex-direction: row;    /* Pone los elementos en fila */
-    flex-wrap: wrap;        /* Si no caben, bajan a la siguiente línea */
-    gap: 20px;              /* Espacio entre cada proyecto */
-    justify-content: center;/* Centra los proyectos */
-    margin-top: 20px;
+/* Contenedor Principal para que no baile todo en la pantalla */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4); /* Fondo blanco semitransparente */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* Estilo para cada "tarjeta" de proyecto */
+/* Encabezado */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+}
+
+/* Seccion de Portafolio (Flexbox) */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Tarjetas de Proyecto */
 .proyecto-card {
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px;           /* Ancho fijo para que se vean parejos */
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.proyecto-card img {
-    width: 100%;            /* La imagen se ajusta al ancho del cuadro */
-    height: 150px;
-    object-fit: cover;      /* Recorta la imagen para que no se deforme */
-    border-radius: 4px;
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+    background: #fffafa;
+}
+
+/* Botones de Ver Detalle */
+.proyecto-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ff8a8d;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.proyecto-card a:hover {
+    background-color: #e67e80;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #666;
 }
