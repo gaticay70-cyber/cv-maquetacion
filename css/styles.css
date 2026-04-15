@@ -101,3 +101,26 @@ h1 {
     max-width: 600px;
     text-align: left;
 }
+/* Estilo para el botón de regresar */
+.boton-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px);         /* Efecto de desenfoque */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: #22d3ee;                      /* El color cyan de tu nombre */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.boton-regresar:hover {
+    background: rgba(34, 211, 238, 0.2); /* Fondo cyan suave */
+    border-color: #22d3ee;
+    transform: translateX(-5px);         /* Pequeño movimiento a la izquierda */
+    box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
+}
