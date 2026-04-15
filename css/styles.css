@@ -124,3 +124,22 @@ h1 {
     transform: translateX(-5px);         /* Pequeño movimiento a la izquierda */
     box-shadow: 0 0 15px rgba(34, 211, 238, 0.3);
 }
+.galeria-trabajo {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    gap: 15px;               /* Espacio entre imágenes */
+    margin-top: 20px;        /* Espacio con el texto de arriba */
+    flex-wrap: wrap;         /* Por si pones muchas, que bajen de fila */
+}
+
+.galeria-trabajo img {
+    width: 200px;            /* Tamaño de las fotos */
+    height: auto;
+    border-radius: 10px;     /* Bordes redondeados */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+.galeria-trabajo img:hover {
+    transform: scale(1.05);  /* Efecto de zoom al pasar el mouse */
+}
