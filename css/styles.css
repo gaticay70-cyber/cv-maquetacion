@@ -24,7 +24,7 @@ main {
 header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Esto empuja el nombre y el texto a la izquierda */
+    align-items: flex-start; /* Esto empuja el nombre y el texto a la derecha */
     text-align: right;
 }
 h1 {
@@ -77,10 +77,12 @@ h1 {
 /* --- ESTILO DEL AVATAR CIRCULAR --- */
 .header-contenido {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    flex-direction: row;      /* Los pone uno al lado del otro */
+    align-items: center;      /* Los centra verticalmente entre sí */
+    justify-content: space-between; /* Empuja el texto a un extremo y la imagen al otro */
+    gap: 30px;                /* Espacio de separación entre texto e imagen */
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .avatar {
