@@ -21,14 +21,19 @@ main {
     padding: 20px 40px;    /* Reducimos el relleno arriba/abajo para que sea más delgado */
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Esto empuja el nombre y el texto a la izquierda */
+    text-align: left;
+}
 h1 {
     font-size: 2.5rem;
     background: linear-gradient(to right, #22d3ee, #f8e081);
     background-clip: text; /* ESTA ES LA LÍNEA QUE DEBES AGREGAR */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
+    text-align: left;
 }
 
 /* 3. TARJETAS COMPACTAS Y MODERNAS */
