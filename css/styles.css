@@ -133,7 +133,7 @@ h1 {
 }
 
 .galeria-trabajo img {
-    width: 200px;            /* Tamaño de las fotos */
+    width: 120px;            /* Tamaño de las fotos */
     height: auto;
     border-radius: 10px;     /* Bordes redondeados */
     border: 1px solid rgba(255, 255, 255, 0.3);
