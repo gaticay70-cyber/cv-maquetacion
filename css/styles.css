@@ -77,12 +77,12 @@ h1 {
 /* --- ESTILO DEL AVATAR CIRCULAR --- */
 .header-contenido {
     display: flex;
-    flex-direction: row;      /* Los pone uno al lado del otro */
-    align-items: center;      /* Los centra verticalmente entre sí */
-    justify-content: space-between; /* Empuja el texto a un extremo y la imagen al otro */
-    gap: 30px;                /* Espacio de separación entre texto e imagen */
-    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; /* Alinea verticalmente el texto con el centro del círculo */
+    gap: 40px;           /* Da un buen respiro entre el texto y la imagen */
     width: 100%;
+    padding: 20px;       /* Opcional: para que el contenido no toque los bordes del cristal */
 }
 
 .avatar {
@@ -90,14 +90,14 @@ h1 {
     height: 150px;
     border-radius: 50%; /* Esto hace el círculo */
     object-fit: cover;  /* Evita que se deforme la foto */
-    border: 4px solid #22d3ee; 
+    border: 4px solid #ffffff; 
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .descripcion-personal {
-    color: #f1f5f9;
+    color: #ffffff;
     opacity: 0.8;
     font-size: 0.9rem;
     max-width: 600px;
-    text-align: center;
+    text-align: left;
 }
